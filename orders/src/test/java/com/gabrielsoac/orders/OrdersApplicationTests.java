@@ -1,10 +1,10 @@
-package com.challenge.backend;
+package com.gabrielsoac.orders;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendApplicationTests {
+class OrdersApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.challenge.backend;
+package com.gabrielsoac.orders;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackendApplication {
+public class OrdersApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackendApplication.class, args);
+		SpringApplication.run(OrdersApplication.class, args);
 	}
 
 }
