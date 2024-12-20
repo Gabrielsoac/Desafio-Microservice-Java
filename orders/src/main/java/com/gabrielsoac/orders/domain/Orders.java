@@ -15,9 +15,12 @@ public class Orders {
     @Column(nullable = false, name = "user_id")
     private Long userId;
 
-    @OneToMany
+    @ElementCollection
+    @CollectionTable(name = "order_items", joinColumns = @JoinColumn(name = "order_id"))
     private final Set<Item> items = new HashSet<>();
 
+    @Enumerated(EnumType.ORDINAL)
+    @Column(nullable = false)
     public OrderStatus status;
 
     public String getId() {
